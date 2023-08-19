@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 import App from './App'
+import Play from './routes/Play'
 import Welcome from './routes/Welcome'
 import Quiz from "./routes/Quiz"
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "quiz",
         element: <Quiz />
+      },
+      {
+        path: "play",
+        element: <Play />
       }
     ]
   },

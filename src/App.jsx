@@ -1,13 +1,16 @@
 import { Outlet } from "react-router-dom";
-import "./global.css";
+import pallet from "./colors.json"
+import { ThemeProvider } from "styled-components";
+import { GlobalWrapper, GlobalStyle } from "./style";
 
 function App() {
   return (
-    <div>
-      <h1>Teste</h1>
-      <Outlet />
-      <p>Footer</p>
-    </div>
+    <ThemeProvider theme={pallet.light}>
+      <GlobalWrapper>
+        <GlobalStyle />
+        <Outlet />
+      </GlobalWrapper>
+    </ThemeProvider>
   );
 }
 
