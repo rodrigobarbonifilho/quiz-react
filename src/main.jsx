@@ -9,11 +9,11 @@ import Quiz from "./routes/Quiz"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/quiz-react",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/quiz-react",
         element: <Welcome />
       },
       {
